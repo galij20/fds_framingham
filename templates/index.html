@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Prediction</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Heart Disease Risk Prediction</h1>
+        <form id="predictionForm">
+            <label for="features">Enter Features (comma-separated):</label>
+            <input type="text" id="features" name="features" placeholder="e.g., 0,63,1,0,0,0,0,0,0,205,138,71,33.11,60,85,1" required>
+            <button type="submit">Predict</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="../static/js/script.js"></script>
+</body>
+</html>

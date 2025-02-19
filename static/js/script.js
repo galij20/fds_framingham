@@ -39,5 +39,26 @@ document.getElementById('predictionForm').addEventListener('submit', function (e
     })
     .catch(error => {
         console.error('Error:', error);
+        
+    });
+    fetch('https://fds-framingham.onrender.com', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ features: Object.values(features) }),
+    })
+    .then(response => response.json())
+    .then(data => {
+        const resultDiv = document.getElementById('result');
+        if (data.error) {
+            resultDiv.textContent = `Error: ${data.error}`;
+        } else {
+            resultDiv.textContent = `Prediction: ${data.prediction === 1 ? 'High Risk' : 'Low Risk'}`;
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        
     });
 });

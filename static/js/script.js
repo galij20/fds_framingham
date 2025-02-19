@@ -41,7 +41,7 @@ document.getElementById('predictionForm').addEventListener('submit', function (e
         console.error('Error:', error);
         
     });
-    fetch('https://fds-framingham.onrender.com', {
+    fetch('https://fds-framingham.onrender.com/predict', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

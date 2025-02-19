@@ -10,8 +10,86 @@
     <div class="container">
         <h1>Heart Disease Risk Prediction</h1>
         <form id="predictionForm">
-            <label for="features">Enter Features (comma-separated):</label>
-            <input type="text" id="features" name="features" placeholder="e.g., 0,63,1,0,0,0,0,0,0,205,138,71,33.11,60,85,1" required>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <label for="sex">Sex:</label>
+                    <select id="sex" name="sex" required>
+                        <option value="1">Male</option>
+                        <option value="0">Female</option>
+                    </select>
+                </div>
+                <div class="grid-item">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+                <div class="grid-item">
+                    <label for="education">Education:</label>
+                    <input type="number" id="education" name="education" required>
+                </div>
+                <div class="grid-item">
+                    <label for="currentSmoker">Current Smoker:</label>
+                    <select id="currentSmoker" name="currentSmoker" required>
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                    </select>
+                </div>
+                <div class="grid-item">
+                    <label for="cigsPerDay">Cigarettes per Day:</label>
+                    <input type="number" id="cigsPerDay" name="cigsPerDay" required>
+                </div>
+                <div class="grid-item">
+                    <label for="BPMeds">BP Meds:</label>
+                    <select id="BPMeds" name="BPMeds" required>
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                    </select>
+                </div>
+                <div class="grid-item">
+                    <label for="prevalentStroke">Prevalent Stroke:</label>
+                    <select id="prevalentStroke" name="prevalentStroke" required>
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                    </select>
+                </div>
+                <div class="grid-item">
+                    <label for="prevalentHyp">Prevalent Hypertension:</label>
+                    <select id="prevalentHyp" name="prevalentHyp" required>
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                    </select>
+                </div>
+                <div class="grid-item">
+                    <label for="diabetes">Diabetes:</label>
+                    <select id="diabetes" name="diabetes" required>
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                    </select>
+                </div>
+                <div class="grid-item">
+                    <label for="totChol">Total Cholesterol:</label>
+                    <input type="number" id="totChol" name="totChol" required>
+                </div>
+                <div class="grid-item">
+                    <label for="sysBP">Systolic BP:</label>
+                    <input type="number" id="sysBP" name="sysBP" required>
+                </div>
+                <div class="grid-item">
+                    <label for="diaBP">Diastolic BP:</label>
+                    <input type="number" id="diaBP" name="diaBP" required>
+                </div>
+                <div class="grid-item">
+                    <label for="BMI">BMI:</label>
+                    <input type="number" id="BMI" name="BMI" required>
+                </div>
+                <div class="grid-item">
+                    <label for="heartRate">Heart Rate:</label>
+                    <input type="number" id="heartRate" name="heartRate" required>
+                </div>
+                <div class="grid-item">
+                    <label for="glucose">Glucose:</label>
+                    <input type="number" id="glucose" name="glucose" required>
+                </div>
+            </div>
             <button type="submit">Predict</button>
         </form>
         <div id="result"></div>

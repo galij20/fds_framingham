@@ -32,6 +32,8 @@ This will perform the following steps:
 2. Start the Flask server
 3. Make a POST request to the server with the features to predict the 10-year risk of future coronary heart disease (CHD)
 
+After the server starts running, go to the following link:
+[Live Preview: Heart Attack Prediction](https://galij20.github.io/fds_framingham/)
 ## Project Structure
 - `static`: Contains the source code for the frontend, css and js files.
 - `project.ipynb`: Jupyter notebooks for EDA and model experimentation.
